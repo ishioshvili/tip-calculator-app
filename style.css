@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* mobile version */
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+	justify-content: end;
+	height: 100vh;
+    font-family: 'Space Mono';
+    background-color: hsl(185, 41%, 84%);
+}
+
+.card {
+	background-color: white;
+	width: 375px;
+	height: 789px;
+	box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+	border-radius: 25px 25px 0px 0px;
+	margin-top: 40.86px;
+}
+
+h1 {
+	margin-top: 32px;
+	color: #5E7A7D;
+	line-height: 23.7px;
+	font-size: 16px;
+	margin-left: 32px;
+}
+
+.percentsContainer {
+	margin-top: 16px;
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 16.56px;
+	row-gap: 16px;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.percent {
+	background-color: #00474B;
+	color: white;
+	font-family: 'Space Mono';
+	font-size: 24px;
+	line-height: 35.54px;
+	border-radius: 5px;
+	width: 146.63px;
+	height: 48px;
+	border: 0;
+}
+
+.custom {
+	background-color: #F3F9FA;
+	color: #00474B;
+	font-family: 'Space Mono';
+	text-align: end;
+	padding-right: 17.33px;
+	width: 129.3px;
+	font-size: 24px;
+	line-height: 35.54px;
+	border-radius: 5px;
+	border: 0;
+}
+
+.custom::placeholder {
+	color: #547878;
+	font-size: 24px;
+	line-height: 35.54px;
+}
+
+.tipContainer {
+	margin-top: 32px;
+	margin-left: 24px;
+	background-color: #00474B;
+	border-radius: 15px;
+	width: 327px;
+	height: 257px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items:center; 
+}
+
+h2 {
+	color: white;
+	font-size: 16px;
+	line-height: 23.7px;
+}
+
+h3 {
+	color: #7F9D9F;
+	font-size: 13px;
+	line-height: 19.25px;
+}
+
+p {
+	color: #26C2AE;
+	font-size: 32px;
+	line-height: 47.39px;
+}
+
+.tipDollars {
+	display: flex;
+	align-items: center;	
+	justify-content: space-between;
+	width: 281px;
+}
+
+.totalAmount {
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+.buttonReset {
+	margin-bottom: 24px;
+	background-color: #0D686D;
+	width: 281px;
+	height: 48px;
+	border-radius: 5px;
+	border: 0;
+	color: #00474B;
+	font-family: 'Space Mono';
+	font-size: 20px;
+	line-height: 29.62px;
+}
+
+.inputBill, .inputPerson {
+	background-color: #F3F9FA; 
+	color: #00474B;
+	font-family: 'Space Mono';
+	font-size: 24px;
+	line-height: 35.54px;
+	text-align: end;
+	padding-right: 17.48px;
+	width: 293.52px;
+	height: 48px;
+	border-radius: 5px;
+	border: 0;
+	margin-left: 32px;
+}
+
+.inputBill::placeholder, .inputPerson::placeholder {
+	color: #00474B;
+	opacity: 0.35;
+	font-size: 24px;
+	line-height: 35.54px; 
+} 
+
+.iconDollar, .iconPerson {
+	position: absolute;
+	margin-top: 16.87px;
+	margin-left: 51.26px;
+}
+
+.zero {
+	color: #E17457;
+	font-size: 16px;
+	line-height: 23.7px;
+	position: absolute;
+	margin-left: 215px;
+	margin-top: -25px;
+	display: none;
+}
+
+input:focus {
+	outline-color: #26C2AE;
+  }
+
+/* desctop version */
+
+@media (min-width: 1440px) {
+	body {
+		justify-content: center;
+	}
+
+	.card {
+		width: 920px;
+		height: 481px;
+		border-radius: 25px;
+		margin-top: 87.86px;
+	}
+
+	h1 {
+		margin-top: 40px;
+		margin-left: 48px;
+	}
+
+	.percentsContainer {
+		grid-template-columns: auto auto auto;
+		column-gap: 14px;
+		margin-left: 48px;
+		margin-right: 48px;
+		
+	}
+
+	.percent {
+		width: 117px;
+		cursor: pointer;
+	}
+
+	.percent:hover {
+		background-color: #9FE8DF;
+	}
+
+	.custom {
+		text-align: end;
+		padding-right: 15px;
+		width: 102px;
+	}
+
+	.tipContainer {
+		margin-left: 0; 
+		width: 413px;
+		height: 417px;
+	}
+
+	p {
+		font-size: 48px;
+		line-height: 71.09px;
+	}
+
+	.tipDollars {
+		width: 333px;
+	}
+
+	.totalAmount {
+		margin-top: 25px;
+		margin-bottom: 122px;
+	}
+
+	.buttonReset {
+		margin-bottom: 40px;
+		width: 333px;
+		cursor: pointer;
+	}
+
+	.buttonReset:hover {
+		background-color: #9FE8DF;
+	}
+
+	.inputBill, .inputPerson {
+		width: 361.52px;
+		margin-left: 48px;
+		cursor: pointer;
+	}
+	
+	.iconDollar, .iconPerson {
+		margin-left: 67.26px;
+	}
+
+	.card {
+		display: flex;
+	}
+
+	.zero {
+		margin-left: 299px;
+	}
+}
